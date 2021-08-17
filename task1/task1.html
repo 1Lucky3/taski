@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+    content="ie=edge">
+    <link href="task1.css" rel="stylesheet">
+    <title>Task1</title>
+    <style type="text/css">
+      #myBox{color: purple;}
+      .myBox {color: white !important;}
+      div.myBox{color: pink !important}
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <p id="myBox" class="myBox" style="color:yellow">Hello World!</p>
+    </div>
+  </body>
+</html>
+<!--  
+  
+  Ответ: Надпись будет белого цвета.
+  Решение: 
+  Так как документ браузером читается сверху вниз, первым прочитается <link href="task1.css" rel="stylesheet">,
+  после того как применятся все стили это файла, браузер дойдет до тега <style></style> и перезапишет все теги 
+  и самом конце применит стиль, который указан в теге <p></p>, но так как в .myBox {color: white !important;} есть пометка !important,
+  этот стиль будет приоритетнее и по итогу надпись выйдет белого цвета
+
+-->
